@@ -1,4 +1,5 @@
 #!/bin/bash -x
+#Harmonic Series
 
 read -p "Enter the number of terms in Harmonic Series to add:" H
 for((i=1;i<=H;i++))
