@@ -1,5 +1,4 @@
 #!/bin/bash -x
-#Factorial of a given number
 
 read -p "Enter any number: " n
 Facto=1
