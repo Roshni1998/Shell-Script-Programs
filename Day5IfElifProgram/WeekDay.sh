@@ -7,28 +7,21 @@ then
 elif [ $N -eq 2 ]
 then
    echo "Weekday : Monday"
+elif [ $N -eq 3 ]
+then
+   echo "Weekday : Tuesday"
+elif [ $N -eq 4 ]
+then
+   echo "Weekday : Wednesday"
+elif [ $N -eq 5 ]
+then
+   echo "Weekday : Thursday"
+elif [ $N -eq 6 ]
+then 
+   echo "Weekday : Friday"
+elif [ $N -eq 7 ]
+then
+   echo "Weekday : Saturday"
 else
-   if [ $N -eq 3 ]
-   then
-      echo "Weekday : Tuesday"
-   elif [ $N -eq 4 ]
-   then
-      echo "Weekday : Wednesday"
-   else
-       if [ $N -eq 5 ]
-       then
-          echo "Weekday : Thursday"
-       elif [ $N -eq 6 ]
-       then 
-          echo "Weekday : Friday"
-       else
-	    if [ $N -eq 7 ]
-            then
-               echo "Weekday : Saturday"
-            else
-                N=0
-            fi
-       fi
-
-   fi
+   echo "Please Enter a valid Number"
 fi
