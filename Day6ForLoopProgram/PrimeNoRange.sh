@@ -1,27 +1,28 @@
 
 
-echo "Enter the lower limit, greater than 1"
-read Low
-#echo "Enter the Upper limit"
-#read Upper
-#echo "The given range is from $Low and $Upper"
-#echo "The Prime Numbers are:"
+read -p "Enter the lower limit, greater than 1: " low
+read -p "Enter the upper limit: " upper
+echo "The given range is from $low and $upper"
+echo "The Prime Numbers are:"
 
-for((i=0;i<Low;i++))
+for((i=$low;$i<=$upper;i++))
 do
-	read -p "Enter the upper limit" Upper
-done
-while [ $Upper -gt 2 ]
-do
-	for((j=2;j<=$Upper/2;j++))
-	do
-		a=$((Upper%j))
-		if [ $a -eq 0 ]
-		then
-			echo "$Upper is not a prime number"
-		exit 
-		fi
-	done
-echo "$Upper is a prime number"
-exit
+   num=$i
+   if [ $num -gt 1 ]
+   then
+      for((j=2;$j<=$(($num/2));j++))
+      do
+         if [ $(($num%$j)) -eq 0 ]
+         then
+            check=0
+ 	    break
+	 else
+	    check=1
+         fi
+      done
+      if [ $check -eq 1 ]
+      then
+         echo "Prime Number: " $num
+      fi
+   fi
 done
