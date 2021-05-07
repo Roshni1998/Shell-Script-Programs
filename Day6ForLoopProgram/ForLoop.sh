@@ -1,3 +1,5 @@
+#!/bin/bash -x
+
 FullTime=1
 PartTime=2
 FullTimeHr=8
