@@ -1,29 +1,22 @@
 #!/bin/bash -x
-Day1=1 Day2=2 Day3=3 Day4=4 Day5=5 Day6=6 Day7=7
 
 read -p "Enter a Number between 1 to 7 : " Day
 
 case $Day in
-   $Day1)
-      echo "Sunday"
-      ;;
-   $Day2)
-      echo "Monday"
-      ;;
-   $Day3)
-      echo "Tuesday"
-      ;;
-   $Day4)
-      echo "Wednesday"
-      ;;
-   $Day5)
-      echo "Thursday"
-      ;;
-   $Day6)
-      echo "Friday"
-      ;;
-   $Day7)
-      echo "Saturday"
-      ;;
+   1)
+   echo "Sunday";;
+   2)
+   echo "Monday";;
+   3)
+   echo "Tuesday";;
+   4)
+   echo "Wednesday";;
+   5)
+   echo "Thursday";;
+   6)
+   echo "Friday";;
+   7)
+   echo "Saturday";;
    *)
+   echo "Please Enter a Valid Number";;
 esac
